@@ -52,6 +52,12 @@ elseif (_GLFW_OSMESA)
                                 osmesa_context.c)
 endif()
 
+if (WIN32)
+    target_sources(glfw PRIVATE win32_module.c)
+else()
+    target_sources(glfw PRIVATE posix_module.c)
+endif()
+
 if (_GLFW_X11 OR _GLFW_WAYLAND)
     if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
         target_sources(glfw PRIVATE linux_joystick.h linux_joystick.c)
