@@ -1,3 +1,6 @@
+## GLFW Fork for ZEngine
+This fork was made on 29/05/2021 for easy integration for the GLFW platform with the ZEngine game engine project as a submodule.
+
 # GLFW
 
 [![Build status](https://github.com/glfw/glfw/actions/workflows/build.yml/badge.svg)](https://github.com/glfw/glfw/actions)
