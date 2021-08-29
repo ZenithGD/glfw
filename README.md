@@ -1,5 +1,5 @@
 ## GLFW Fork for ZEngine
-This fork was made on 29/05/2021 for easy integration for the GLFW platform with the ZEngine game engine project as a submodule.
+This fork was made on 29/05/2021 for easy integration for the GLFW platform with the ZEngine game engine project as a submodule. A premake Lua script is included in order to build GLFW as a static library that links into the main project.
 
 # GLFW
 
