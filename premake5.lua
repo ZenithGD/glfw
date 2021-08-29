@@ -1,4 +1,4 @@
--- out_dir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}" will be already defined
+out_dir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "GLFW"
     kind "StaticLib"
