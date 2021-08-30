@@ -3,7 +3,7 @@ out_dir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 project "GLFW"
     kind "StaticLib"
     language "C"
-    staticruntime "off"
+    staticruntime "on"
     
     targetdir ("bin/" .. out_dir .. "/%{prj.name}")
     objdir ("bin-int/" .. out_dir .. "/%{prj.name}")
@@ -67,10 +67,8 @@ project "GLFW"
 
     filter "configurations:Debug"
         runtime "Debug"
-        buildoptions "/MTd"
         symbols "on"
 
     filter "configurations:Release"
         runtime "Release"
-        buildoptions "/MT"
         optimize "on"
