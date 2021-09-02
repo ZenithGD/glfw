@@ -5,7 +5,7 @@ This fork was made for easy integration for the GLFW platform with any project w
 
 First of all, add this repo as a submodule for your project. For example, let's load it in a folder called `myProject/vendor/GLFW`:
 ```
-$> git add submodule <this repo's link> myProject/vendor/GLFW
+$> git submodule add <this repo's link> myProject/vendor/GLFW
 ```
 
 Your project should have some kind of premake script which configures the project, so in order to include the GLFW premake script, you need to include the folder in which you placed the submodule. Add this line into your premake script:
