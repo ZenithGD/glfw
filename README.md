@@ -1,5 +1,34 @@
-## GLFW Fork for ZEngine
+# GLFW/Premake
 This fork was made for easy integration for the GLFW platform with any project whose build system is based on Premake scripts. A premake Lua script is included in order to build GLFW as a static library that links into the main project. I will try to update it with the latest GLFW source code available.
+
+## How to integrate this GLFW fork
+
+First of all, add this repo as a submodule for your project. For example, let's load it in a folder called `myProject/vendor/GLFW`:
+```
+$> git add submodule <this repo's link> myProject/vendor/GLFW
+```
+
+Your project should have some kind of premake script which configures the project, so in order to include the GLFW premake script, you need to include the folder in which you placed the submodule. Add this line into your premake script:
+
+```lua
+include "myProject/vendor/GLFW"
+```
+
+Now you just have to link the main project into GLFW, adding the following line in your premake file:
+```lua
+links {
+    "GLFW",
+    ...
+}
+```
+
+If you want to also set an additional include directory to GLFW's include directory, add the following line to your script:
+```lua
+includedirs {
+    "myProject/vendor/GLFW/include"
+    ...
+}
+```
 
 # GLFW
 
