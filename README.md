@@ -3,7 +3,7 @@ This fork was made for easy integration for the GLFW platform with any project w
 
 ## How to integrate this GLFW fork
 
-First of all, add this repo as a submodule for your project. For example, let's load it in a folder called `myProject/vendor/GLFW`:
+First of all, make sure you've initialized a repository in your project. If you did, then add this repo as a submodule for your project. For example, let's load it in a folder called `myProject/vendor/GLFW`:
 ```
 $> git submodule add <this repo's link> myProject/vendor/GLFW
 ```
